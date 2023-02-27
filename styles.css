@@ -78,11 +78,18 @@ body {
   color: black;
   font-weight: bolder;
   transition: all 0.15s;
+  vertical-align: center;
 }
 
+#nav_links li:active #home-link,
 #nav_links li:active a {
   opacity: 0.6;
   color: gray;
+}
+
+#nav_links li:active #info-link {
+  color: #f8d667;
+  opacity: 0.6;
 }
 
 #nav_links li a {
@@ -90,20 +97,13 @@ body {
   padding-right: 10px;
 }
 
-.home {
+#home-link,
+#prices-link,
+#info-link {
   height: 27px;
   width: 26px;
   position: absolute;
-  top: 30px;
-  transition: all 0.5s;
-}
-
-.prices,
-.info {
-  height: 27px;
-  width: 35px;
-  position: absolute;
-  top: 30px;
+  top: 35px;
   vertical-align: center;
   transition: all 0.5s;
 }
