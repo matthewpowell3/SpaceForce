@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', Arial;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  /*opacity: 90%;*/
+}
+
+#logos {
+  display: flex;
+  align-items: center;
+  position: relative;
+  /*margin-right: auto;*/
+}
+
+#logo_Text {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bolder;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  opacity: 0.94;
+}
+
+#logo_Image {
+  position: absolute;
+  right: 75px;
+  height: 46px;
+  width: 46px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  border-radius: 96px;
+  object-fit: cover;
+}
+
+#logo_Image {
+  position: absolute;
+  right: 76px;
+  height: 46px;
+  width: 46px;
+  border-radius: 96px;
+  object-fit: cover;
+}
+
+#header #nav_links,
+#header #contact_button {
+  opacity: 0.9;
+}
+
+#nav_links {
+  list-style: none;
+}
+
+#nav_links li {
+  display: inline-block;
+  padding: 0 50px;
+  transition: all 0.5s;
+}
+
+#nav_links li:hover #home-link,
+#nav_links li:hover #info-link,
+#nav_links li:hover #prices-link,
+#nav_links li:hover a {
+  transform: translateY(-10px);
+}
+
+#nav_links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  transition: all 0.15s;
+}
+
+#nav_links li:active a {
+  opacity: 0.6;
+  color: gray;
+}
+
+#nav_links li a {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.home {
+  height: 27px;
+  width: 26px;
+  position: absolute;
+  top: 30px;
+  transition: all 0.5s;
+}
+
+.prices,
+.info {
+  height: 27px;
+  width: 35px;
+  position: absolute;
+  top: 30px;
+  vertical-align: center;
+  transition: all 0.5s;
+}
+
+#contact_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  padding: 8px 25px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: inset 0px 5px 4px rgba(255, 255, 255, 0.15);
+  transition: all 0.5s;
+}
+
+#contact_button:hover {
+  transform: translateY(-10px);
+}
+
+#main {
+  position: relative;
+  background-color: red;
+}
+
+#paragraph {
+  position: absolute;
+  left: 100px;
+  top: 258px;
+  height: 196px;
+  width: 1000px;
+  font-size: 23px;
+  line-height: 25px;
+  text-transform: capitalize;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
+  z-index: 100;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.15);
+  z-index: 150;
+}
+
+.globe_background {
+  position: absolute;
+  left: 436px;
+  top: 157px;
+  opacity: 0.9;
+}
