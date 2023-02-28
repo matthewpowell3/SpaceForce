@@ -78,7 +78,6 @@ body {
   color: black;
   font-weight: bolder;
   transition: all 0.15s;
-  vertical-align: center;
 }
 
 #nav_links li:active #home-link,
@@ -89,6 +88,11 @@ body {
 
 #nav_links li:active #info-link {
   color: #f8d667;
+  opacity: 0.6;
+}
+
+#nav_links li:active #prices-link {
+  color: rgb(90, 219, 90);
   opacity: 0.6;
 }
 
@@ -104,7 +108,6 @@ body {
   width: 26px;
   position: absolute;
   top: 35px;
-  vertical-align: center;
   transition: all 0.5s;
 }
 
