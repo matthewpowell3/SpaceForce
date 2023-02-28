@@ -107,8 +107,8 @@ body {
   height: 27px;
   width: 26px;
   position: absolute;
-  top: 35px;
   transition: all 0.5s;
+  vertical-align: center;
 }
 
 #contact_button {
