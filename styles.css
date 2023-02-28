@@ -152,9 +152,10 @@ body {
 }
 
 #paragraph {
+  font-size: 14px;
   position: absolute;
   left: 100px;
-  top: 258px;
+  top: 208px;
   height: 196px;
   width: 1000px;
   font-size: 23px;
@@ -163,7 +164,7 @@ body {
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
   z-index: 100;
 }
-
+/* 
 .overlay {
   position: absolute;
   top: 0;
@@ -172,11 +173,12 @@ body {
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.15);
   z-index: 150;
-}
+} */
 
 .globe_background {
   position: absolute;
-  left: 436px;
-  top: 157px;
+  left: 536px;
+  width: 600px;
+  top: 67px;
   opacity: 0.9;
 }
