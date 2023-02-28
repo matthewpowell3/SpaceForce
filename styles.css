@@ -121,12 +121,16 @@ body {
   padding: 8px 25px;
   border-radius: 50px;
   border: none;
-  box-shadow: inset 0px 5px 4px rgba(255, 255, 255, 0.15);
-  transition: all 0.5s;
+  transition: all 0.10s;
 }
 
 #contact_button:hover {
   transform: translateY(-10px);
+}
+
+#contact_button:active {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  opacity: 0.3;
 }
 
 #main {
