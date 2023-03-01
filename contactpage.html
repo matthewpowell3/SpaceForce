@@ -1,12 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactpage.Com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701388919.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: white;
+        font-family: 'Tilt Warp', cursive;
+      }
+
+      @media screen and (max-width: 992px) {
+        body {
+          background-color: blue;
+        }
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+      }
+
+      form #email,
+      form #password {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        padding: 10px;
+        width: 450px;
+        border: none;
+        border-radius: 6px;
+        margin-bottom: 15px;
+      }
+
+      form input::placeholder {
+        color: gray;
+      }
+
+      form #email:focus,
+      form #password:focus {
+        outline: none;
+      }
+
+      #radio_buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #radio_buttons label {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 15px;
+        color: #2d112a;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <form action="/action.php">
+        <input
+          type="email"
+          id="email"
+          placeholder="nowgeforce691@gmail.com"
+          required
+        />
+        <br />
+        <input
+          type="password"
+          id="password"
+          placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"
+          required
+        />
+        <div id="radio_buttons">
+          <div>
+            <input type="radio" name="radio" id="radio1" required />
+            <label for="radio1">Forget password</label>
+          </div>
+          <div>
+            <input type="radio" name="radio" id="radio2" required />
+            <label for="radio2">Create account</label>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
