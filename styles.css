@@ -182,3 +182,8 @@ body {
   top: 87px;
   opacity: 0.9;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
