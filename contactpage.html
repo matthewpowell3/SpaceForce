@@ -61,7 +61,6 @@
       form #password:focus {
         outline: none;
       }
-
       #radio_buttons {
         display: flex;
         justify-content: space-between;
@@ -83,7 +82,7 @@
         font-weight: 700;
         font-style: italic;
         padding: 8px;
-        width:470px;
+        width: 470px;
         border:none;
         border-radius: 6px;
         transition: all 0.5s;
@@ -103,6 +102,7 @@
         text-decoration: none;
         color: black;
       }
+      }
     </style>
   </head>
   <body>
@@ -118,14 +118,24 @@
         <input
           type="password"
           id="password"
-          placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"
+          placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"
           required
         />
         <div id="radio_buttons">
-   
+          <div>
+            <a href="#">
+              <input type="radio" name="radio" id="radio1" required />
+              <label for="radio1">Forget password</label>
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <input type="radio" name="radio" id="radio2" required />
+              <label for="radio2">Create account</label>
+            </a>
+          </div>
         </div>
 
-      </div>
         <div class="buttons">
           <button type="submit" id="submit">Submit</button>
         </div>
