@@ -66,7 +66,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
 
       #radio_buttons label {
@@ -79,10 +79,24 @@
       #submit {
         background-color: #cb293e;
         color: white;
-        padding: 10px;
-        width:450px;
+        font-size: 15px;
+        font-weight: 700;
+        font-style: italic;
+        padding: 8px;
+        width:470px;
         border:none;
         border-radius: 6px;
+        transition: all 0.5s;
+      }
+
+      #submit:hover {
+        background-color: #f3687a;
+        opacity: 0.9;
+      }
+
+      #submit:active {
+        background-color: #f3687a;
+        opacity: 0.6;
       }
     </style>
   </head>
@@ -105,11 +119,11 @@
         <div id="radio_buttons">
           <div>
             <input type="radio" name="radio" id="radio1" required />
-            <label for="radio1">Forget password</label>
+            <label for="radio1"><a href="#">Forget password</a></label>
           </div>
           <div>
             <input type="radio" name="radio" id="radio2" required />
-            <label for="radio2">Create account</label>
+            <label for="radio2"><a href="#">Create account</a></label>
           </div>
         </div>
         <div class="buttons">
