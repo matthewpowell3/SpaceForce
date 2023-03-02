@@ -130,7 +130,7 @@ body {
   transform: translateY(-10px);
 }
 
-#contact_button:active {
+#contact_button:hover {
   background-color: #1877f2;
   color: white;
   opacity: 0.3;
@@ -143,7 +143,7 @@ body {
   color: #1877f2;
 }
 
-#contact_button:active #contact-icon {
+#contact_button:hover #contact-icon {
   color: white;
 }
 
