@@ -71,7 +71,7 @@
 
       #radio_buttons label {
         font-style: italic;
-        font-weight: normal;
+        font-weight: 500;
         font-size: 15px;
         color: #2d112a;
       }
@@ -98,6 +98,11 @@
         background-color: #f3687a;
         opacity: 0.6;
       }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
     </style>
   </head>
   <body>
@@ -123,7 +128,9 @@
           </div>
           <div>
             <input type="radio" name="radio" id="radio2" required />
-            <label for="radio2"><a href="#">Create account</a></label>
+            <a href="#">
+              <label for="radio2">Create account</label>
+            </a>
           </div>
         </div>
         <div class="buttons">
