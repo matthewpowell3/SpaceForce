@@ -124,10 +124,15 @@
         <input
           type="password"
           id="password"
-          placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"
+          placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;"
+          pattern="[a-z0-5]{8,}"
+          maxlength="55"
+          minlength="8"
           required
         />
         <div id="radio_buttons">
+          <!-- patterns symbols you can't use -->
+          <!--  min-length can't be less than 8 -->
           <div>
             <a href="#">
               <input type="radio" name="radio" id="radio1" required />
