@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: 'Inter', Arial;
+  font-family: 'Roboto', Arial;
+  overflow: hidden;
 }
 
 #header {
@@ -24,10 +25,10 @@ body {
 }
 
 #logo_Text {
-  font-family: Verdana;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: bolder;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
   z-index: 100;
   opacity: 0.94;
 }
@@ -35,8 +36,8 @@ body {
 #logo_Image {
   position: absolute;
   right: 75px;
-  height: 46px;
-  width: 46px;
+  height: 36px;
+  width: 36px;
   border: 1px solid rgb(0, 0, 0, 0.5);
   border-radius: 96px;
   object-fit: cover;
@@ -107,7 +108,7 @@ body {
   height: 27px;
   width: 26px;
   position: absolute;
-  transition: all 0.5s;
+  transition: all 0.6s;
   vertical-align: center;
 }
 
@@ -121,26 +122,42 @@ body {
   padding: 8px 25px;
   border-radius: 50px;
   border: none;
-  box-shadow: inset 0px 5px 4px rgba(255, 255, 255, 0.15);
-  transition: all 0.5s;
+  transition: all 0.9s;
+  box-shadow: 0px 0px 10px 4px black;
 }
 
 #contact_button:hover {
+  background-color: #1877f2;
+  color: white;
+  opacity: 0.3;
+  /* box-shadow: Xoffset Yoffset blur spread; */
+  box-shadow: 0px 0px 10px 4px #1877f2;
   transform: translateY(-10px);
+}
+
+#contact-icon {
+  font-size: 20px;
+  vertical-align: center;
+  padding-left: 10px;
+  color: #1877f2;
+}
+
+#contact_button:hover #contact-icon {
+  color: white;
 }
 
 #main {
   position: relative;
-  background-color: red;
+  /* background-color: red; */
 }
 
 #paragraph {
+  font-size: 18px;
   position: absolute;
-  left: 100px;
-  top: 258px;
+  left: 250px;
+  top: 168px;
   height: 196px;
   width: 1000px;
-  font-size: 23px;
   line-height: 25px;
   text-transform: capitalize;
   filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
@@ -153,13 +170,19 @@ body {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 150;
 }
 
 .globe_background {
   position: absolute;
-  left: 436px;
-  top: 157px;
+  left: 636px;
+  width: 600px;
+  top: 87px;
   opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
