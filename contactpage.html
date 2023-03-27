@@ -108,18 +108,18 @@
         text-decoration: none;
         color: black;
       }
+      .error {
+        font-weight: 500;
+        color: white;
+        margin: 0px auto;
+      }
       }
     </style>
   </head>
   <body>
     <main>
-      <form action="/action.php">
-        <input
-          type="email"
-          id="email"
-          placeholder="nowgeforce691@gmail.com"
-          required
-        />
+      <form action="/action.php" class="form">
+        <input type="email" id="email" placeholder="nowgeforce691@gmail.com" />
         <br />
         <input
           type="password"
@@ -128,29 +128,28 @@
           pattern="[a-z0-5]{8,}"
           maxlength="55"
           minlength="8"
-          required
         />
         <div id="radio_buttons">
           <!-- patterns symbols you can't use -->
           <!--  min-length can't be less than 8 -->
           <div>
             <a href="#">
-              <input type="radio" name="radio" id="radio1" required />
+              <input type="radio" name="radio" id="radio1" />
               <label for="radio1">Forget password</label>
             </a>
           </div>
           <div>
             <a href="#">
-              <input type="radio" name="radio" id="radio2" required />
+              <input type="radio" name="radio" id="radio2" />
               <label for="radio2">Create account</label>
             </a>
           </div>
         </div>
 
-        <div class="buttons">
-          <button type="submit" id="submit">Submit</button>
-        </div>
+        <div class="error"></div>
+        <button type="submit" id="submit">Submit</button>
       </form>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
